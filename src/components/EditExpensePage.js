@@ -17,7 +17,7 @@ export class EditExpensePage extends React.Component {
       <div>
         <ExpenseForm
           expense = {this.props.expense}
-          onSubmit={ this.onSubmit }
+          onSubmit={this.onSubmit}
         />
         <button onClick={ this.onRemove }>Remove</button>
       </div>
@@ -36,4 +36,4 @@ const mapStatetoProps = (state, props) => {
   };
 };
 
-export default connect(mapStatetoProps)(EditExpensePage);
+export default connect(mapStatetoProps, mapDispatchToProps)(EditExpensePage);
