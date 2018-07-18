@@ -6,6 +6,7 @@ export const addExpense = (expense) => ({
   expenses: expense
 });
 
+
 export const startAddExpense = (expenseData = {}) => {
   return (dispatch, getState) => {
     const uid = getState().auth.uid;
